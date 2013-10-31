@@ -48,4 +48,12 @@ $('.timer').each(function(){
 	}
 });
 
+$('a.orange_button').click(function(){
+	$('body').animate({scrollTop:0}, '1000', function(){
+		$('#pick_name').focus();
+	});
+});
+
+$('.cert').fancybox();
+
 });
