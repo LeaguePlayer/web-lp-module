@@ -1,3 +1,214 @@
+<div class="pick_flat">
+	<div class="width_960">
+		<div class="pick_head"><h1>Хотите подобрать квартиру по</h1><h1 class="second"> программе "Молодая семья"?</h1></div>
+		<div class="pick_wrap">
+			<form class="request" action="/">
+				<h2>Отправить заявку</h2>
+				<label class="label_name" for="pick_name"></label><input id="pick_name" type="text" placeholder="Введите имя*:">
+				<label class="label_phone" for="pick_phone"></label><input id="pick_phone" type="text" placeholder="Введите телефон*: ">
+				<div class="button_wrap">
+					<input type="submit" class="orange_button" value="Отправить">
+				</div>
+				<p class="request_line"></p>
+				<p class="trust lock">Мы несем ответственность за безопасность Ваших даных!</p>
+				<p class="trust clock">Мы несем ответственность за безопасность Ваших даных!</p>
+			</form>
+			<div class="discount">
+				<p class="discount_percent">Скидка 20% на наши услуги</p>
+				<p class="discount_remaining">Предложение действует еще:</p>
+				
+				<!-- ///Таймер -->
+				<p data-date_fix="10.11.13" class="timer"><p>
+				<div id="countdown_dashboard" class="countdown">
 
+					<div class="dash days_dash">
+						<div class="digit">0</div>
+						<div class="digit">0</div>
+					</div>
 
-<h1>Приветствую тебя, MEGA-DEVELOPER!</h1>
+					<div class="dash hours_dash">
+						<div class="digit">0</div>
+						<div class="digit">0</div>
+					</div>
+
+					<div class="dash minutes_dash">
+						<div class="digit">0</div>
+						<div class="digit">0</div>
+					</div>
+
+					<div class="dash seconds_dash">
+						<div class="digit">0</div>
+						<div class="digit">0</div>
+					</div>
+				</div>
+				<!-- Таймер/// -->
+
+			</div>
+			<div class="discount">
+				<p class="discount_percent">Скидка 10% на наши услуги</p>
+				<p class="discount_remaining">Предложение действует еще:</p>
+				
+				<!-- ///Таймер2 -->
+					<p data-date_fix="30.10.13" class="timer"><p>
+					<div id="countdown_dashboard2" class="countdown">
+
+					<div class="dash days_dash">
+						<div class="digit">0</div>
+						<div class="digit">0</div>
+					</div>
+
+					<div class="dash hours_dash">
+						<div class="digit">0</div>
+						<div class="digit">0</div>
+					</div>
+
+					<div class="dash minutes_dash">
+						<div class="digit">0</div>
+						<div class="digit">0</div>
+					</div>
+
+					<div class="dash seconds_dash">
+						<div class="digit">0</div>
+						<div class="digit">0</div>
+					</div>
+					</div>
+				<!-- Таймер2/// -->
+				<p class="inactive"></p>
+			</div>
+		</div>
+		<div class="no_time">
+			<p class="no_time_head">Нет времени на поиск квартиры самостоятельно?</p>
+			<p>Обратись к команде профессионалов, мы решим ваши проблемы бесплатно!</p>
+		</div>
+	</div>
+</div>
+<div class="cooperate">
+	<div class="width_960">
+		<h2 class="cooperate_header">Почему стоит работать с нами?</h2>
+		<div class="row">
+			<p class="item-1">Наша база данных содержит свыше 1000 квартир на первичном и вторичном рынках недвижимости</p>
+			<p class="item-2">Мы работаем с сертификатами по любой программе: молодая семья, материнский капитал и т.д.</p>
+		</div>
+		<div class="row">
+			<p class="item-3">Огромный выбор квартир с износом жилого фонда менее 25%</p>
+			<p class="item-4">Подстраиваемся под Ваш график работы</p>
+		</div>
+		<div class="row">
+			<p class="item-5">Подготовка полного пакета документации сопровождающий обьект, помощ в сборке таковой, регистрации перехода прав собственности</p>
+			<p class="item-6">Более 5 лет работы в сфере недвижимости</p>
+		</div>
+	</div>
+	<span class="top_line"></span>
+</div>
+<div class="consult">
+	<div class="width_960">
+		<div class="order_consult">
+			<h2>У Вас нет возможности приехать к нам в офис?</h2>
+			<p class="in_time">Наши специалисты проведут выездную консультацию в удобное для Вас время</p>
+			<a class="orange_button">Заказать выездную консультацию</a>
+		</div>
+	</div>
+</div>
+<div class="flats">
+	<span class="bot_line"></span>
+	<div class="width_960">
+		<h3>Большой выбор квартир</h3><h2>Во всех районах города</h2>
+		<p class="flat_rooms">Однокомнатные квартиры от <span>30</span> кв.м</p>
+		<p class="flat_rooms">Двухкомнатные квартиры от <span>45</span> кв.м</p>
+		<p class="flat_rooms">Трехкомнатные квартиры от <span>60</span> кв.м</p>
+	</div>
+	<span class="top_line"></span>
+</div>
+<div class="partners">
+	<div class="width_960">
+		<h3>Являемся партнерами</h3><h2>Крупнейших партнеров страны</h2>
+	</div>
+	<div class="companies_h">
+		<div class="width_960">
+			<h2>Банки</h2><h2>Страховые компании</h2>
+		</div>
+	</div>
+	<div class="width_960">
+		<div class="left">
+			<p class="sberbank">Официальный партнер</p>
+			<p class="banks"></p>
+		</div>
+		<div class="right">
+			<p class="rosgosstrah">Вы застрахованы от всех ипотечных рисков!</p>
+		</div>
+	</div>
+</div>
+<div class="comments">
+	<span class="bot_line"></span>
+	<div class="width_960">
+		<h2>Отзывы клиентов, которым</h2><h3>Мы помогли приобрести жилье</h3>
+		<div class="message">
+			<img class="photo" src="<?=$this->getAssetsUrl()?>/img/face.png">
+			<p class="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+			<div class="sender">
+				<div class="details"><p class="name">Мария Иванова</p><p class="city">Тюмень</p><p class="phone">8 (480) 000-00-00</p></div>
+			</div>
+		</div>
+		<div class="video"><a href="#"><img src="<?=$this->getAssetsUrl()?>/img/video1.jpg"></a></div>
+		<div class="video"><a href="#"><img src="<?=$this->getAssetsUrl()?>/img/video2.jpg"></a></div>
+	</div>
+	<div class="authors">
+		<div class="width_960">
+			<h4 class="name">Глеб Викторович</h4>
+			<h4 class="name">Глеб Викторович</h4ы>
+		</div>
+	</div>
+</div>
+<div class="certificates">
+	<div class="width_960">
+		<h1>Наши сертификаты</h1>
+		<a href="#"><img src="<?=$this->getAssetsUrl()?>/img/cert_sberbank.jpg"></a>
+		<a href="#"><img src="<?=$this->getAssetsUrl()?>/img/cert_vtb.jpg"></a>
+		<a href="#"><img src="<?=$this->getAssetsUrl()?>/img/cert_vtb.jpg"></a>
+		<a href="#"><img src="<?=$this->getAssetsUrl()?>/img/cert_sberbank_mail.jpg"></a>
+		<a href="#"><img src="<?=$this->getAssetsUrl()?>/img/cert_sberbank_mail.jpg"></a>
+	</div>
+</div>
+<div class="how_pick">
+	<span class="bot_line"></span>
+	<div class="width_960 pick">
+		<h3>Как мы будем подбирать</h3><h2>вам квартиру</h2>
+		<p class="step1">Вы оставляете заявку на сайте или по телефону</p>
+		<p class="step2">Наш специалист созванивается с Вами для получения необходимой информации</p>
+		<p class="step3">Мы делаем подборку квартир по вашим параметрам</p>
+		<p class="step4">Повторный звонок для согласования графика просмотра подобранных вариантов</p>
+		<p class="step5">Готовим документы для оформления предстоящей сделки</p>
+		<p class="step6">Поздравляем! вы владелец вашего собственного жилья</p>
+	</div>
+	<span class="top_line"></span>
+</div>
+<div class="proposal_contents">
+	<div class="width_960">
+		<div class="proposal">
+			<h1>Хотите подобрать квартиру по программе</h1><h1 class="prop_orange">&nbsp;"молодая семья"</h1>
+			<p>Наши специалисты свяжутся с вами</p>
+			<a class="orange_button">Совершенно бесплатная заявка</a>
+		</div>
+	</div>
+</div>
+<span class="top_line"></span>
+<div class="map_wrap">
+	<h1>Вы можете посетить наш офис в любое время</h1>
+	<div id="map">
+		<div class="map width_960">
+			<div class="contacts">
+				<p class="adress">Г.Тюмень ул. Герцена 64, 8 этаж</p>
+				<p class="phone">8 (3453) 58-48-38</p>
+				<p class="phone">8 (3453) 58-48-38</p>
+				<p class="phone">8 (3453) 58-48-38</p>
+				<span class="blackline"></span>
+				<p class="work_header">Работа офиса</p>
+				<p class="work-time">ПН-ПТ&nbsp;&nbsp;&nbsp;10:00-19:00</p>
+				<p class="work-time">СБ-ВС&nbsp;&nbsp;&nbsp;10:00-17:00</p>
+			</div>
+		</div>
+	</div>
+</div>
