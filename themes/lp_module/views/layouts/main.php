@@ -14,6 +14,7 @@
 	$cs->registerCoreScript('jquery');
 	$cs->registerScriptFile($this->getAssetsUrl().'/js/modernizr.custom.js', CClientScript::POS_END);
 	$cs->registerScriptFile($this->getAssetsUrl().'/js/moment.min.js', CClientScript::POS_END);
+	$cs->registerScriptFile($this->getAssetsUrl().'/js/moment.min.js', CClientScript::POS_END);
 	$cs->registerScriptFile($this->getAssetsUrl().'/js/jquery.lwtCountdown-1.0.js', CClientScript::POS_END);
 	$cs->registerScriptFile($this->getAssetsUrl().'/js/script.js', CClientScript::POS_END);
 	$cs->registerScriptFile('http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU', CClientScript::POS_END);

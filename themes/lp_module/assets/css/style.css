@@ -22,12 +22,14 @@ input:focus {
   color: white;
   border: none;
   border-top: 1px solid #ffe411;
+  border-bottom: 1px solid #d28400;
   border-radius: 5px;
   line-height: 2;
   box-shadow: 0px 1px 3px 1px #02264e;
   text-transform: uppercase;
   cursor: pointer;
   padding: 0px 55px;
+  text-shadow: 1px 1px 3px #8A6715;
   font-family: NeoSansBold; }
 
 .orange_button:hover {
@@ -39,6 +41,10 @@ input:focus {
   background: -ms-linear-gradient(left, #ff9400 0%, #ffc30b 50%, #ff9400 100%);
   background: linear-gradient(to right, #ff9400 0%, #ffc30b 50%, #ff9400 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff9400', endColorstr='#ff9400',GradientType=1 ); }
+
+  .orange_button:active {
+    box-shadow: none;
+  }
 
 .top_line {
   height: 8px;
@@ -180,9 +186,9 @@ input:focus {
         background-repeat: no-repeat; }
       .pick_flat .pick_wrap .request .button_wrap {
         display: inline-block;
-        padding: 3px;
+        padding: 5px;
         border-radius: 5px;
-        box-shadow: 0px 0px 3px #004dbf inset; }
+        box-shadow: 0px 0px 5px #c1c1c1 inset; }
       .pick_flat .pick_wrap .request .request_line {
         background-image: url(../img/request_line.png);
         background-position: center center;
@@ -228,18 +234,27 @@ input:focus {
         left: 0px; }
 
 .cooperate {
+  position: relative;
   background-color: #2ee6d6;
   text-align: center;
-  height: 533px; }
+  padding: 25px 0px;
+  }
+  .cooperate .top_line {
+    position: absolute;
+    bottom: 0px;
+  }
   .cooperate .cooperate_header {
-    background: url(../img/ribbon.png) no-repeat center 30px;
+    background: url(../img/ribbon.png) no-repeat center 0px;
     height: 90px;
-    padding: 30px 0px;
-    font-size: 30px;
-    line-height: 2;
-    color: #1f998f;
-    text-shadow: 0px 1px 1px #b6dad8;
-    font-family: NeoSansBold; }
+    margin-bottom: 20px;
+     }
+    .cooperate .cooperate_header h2 {
+      font-size: 30px;
+      color: #1f998f;
+      text-shadow: 0px 1px 1px #b6dad8;
+      font-family: NeoSansBold;
+      line-height: 2
+    }
   .cooperate .row {
     margin-bottom: 15px; }
     .cooperate .row p {
@@ -267,12 +282,11 @@ input:focus {
       background-position: 0px -583px; }
 
 .consult {
-  height: 180px;
   background-color: white;
-  text-align: left; }
+  text-align: left;
+  margin: 30px 0px; }
   .consult h2 {
     font-size: 28px;
-    padding-top: 35px;
     color: #404040; }
   .consult .in_time {
     font-size: 20px;
@@ -284,11 +298,11 @@ input:focus {
     padding-left: 170px;
     background-image: url(../img/taxi.png);
     background-repeat: no-repeat;
-    background-position: 0px 25px; }
+    padding-top: 10px;
+    background-position: 0px center; }
     .consult .order_consult h2 {
       text-transform: uppercase;
-      font-family: NeoSansUltra;
-      width: 900px; }
+      font-family: NeoSansUltra; }
 
 .flats {
   background-image: url(../img/cooperate_bg.jpg);
@@ -358,8 +372,9 @@ input:focus {
       width: 475px;
       text-align: center;
       color: #ffbe00;
-      text-shadow: 0px 1px 1px #ff9c00 inset;
+      text-shadow: 0px -1px 0px #ff9c00;
       font-family: NeoSansBold;
+      line-height: 1.6;
       font-size: 30px; }
   .partners .left {
     width: 475px;
@@ -491,17 +506,21 @@ input:focus {
     text-align: center;
     margin-top: 0px; }
   .certificates img {
-    display: inline-block;
-    background-image: url(../img/cert_bg.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 190px;
+    height: 186px;
     width: 145px;
-    margin-right: 7px;
-    padding: 18px; }
+    margin: 16px 17px;
+     }
+    .certificates a {
+      display: inline-block;
+      width: 180px;
+      height: 220px;
+      background: url(../img/cert_bg.png) no-repeat center center;
+      display: inline-block;
+      margin-right: 5px;
+    }
 
 .how_pick {
-  height: 680px;
+  height: 700px;
   position: relative;
   background-image: url(../img/how_pick_bg.jpg); }
   .how_pick .pick {
@@ -560,10 +579,10 @@ input:focus {
     bottom: 0px; }
 
 .proposal_contents {
-  height: 185px;
+  height: 220px;
   background-color: white; }
   .proposal_contents h1 {
-    display: inline-block;
+    display: inline;
     color: #404040;
     margin-bottom: 0px;
     text-transform: uppercase;
@@ -575,12 +594,10 @@ input:focus {
   .proposal_contents .proposal {
     background: url(../img/house.png) no-repeat 0px center;
     position: absolute;
-    right: -400px;
     padding-left: 166px;
     height: 185px;
-    margin-top: 10px;
-    text-align: left;
-    width: 1180px; }
+    margin-top: 25px;
+    text-align: left; }
     .proposal_contents .proposal .orange_button {
       display: inline-block; }
     .proposal_contents .proposal p {
