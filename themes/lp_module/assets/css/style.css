@@ -410,7 +410,6 @@ input:focus {
       text-align: center; }
 
 .comments {
-  height: 705px;
   background-color: #2ee6d6;
   background-image: url(../img/comments_bg.jpg);
   background-repeat: no-repeat;
