@@ -29,7 +29,9 @@ class SiteController extends FrontController
 	 */
 	public function actionIndex()
 	{
-		$this->render('index');
+		$request_model = Requests::model();
+
+		$this->render('index', array('request_model' => $request_model));
 	}
 
 	/**

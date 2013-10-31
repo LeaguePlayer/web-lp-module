@@ -2,17 +2,7 @@
 	<div class="width_960">
 		<div class="pick_head"><h1>Хотите подобрать квартиру по</h1><h1 class="second"> программе "Молодая семья"?</h1></div>
 		<div class="pick_wrap">
-			<form class="request" action="/">
-				<h2>Отправить заявку</h2>
-				<label class="label_name" for="pick_name"></label><input id="pick_name" type="text" placeholder="Введите имя*:">
-				<label class="label_phone" for="pick_phone"></label><input id="pick_phone" type="text" placeholder="Введите телефон*: ">
-				<div class="button_wrap">
-					<input type="submit" class="orange_button" value="Отправить">
-				</div>
-				<p class="request_line"></p>
-				<p class="trust lock">Мы несем ответственность за безопасность Ваших даных!</p>
-				<p class="trust clock">Мы несем ответственность за безопасность Ваших даных!</p>
-			</form>
+			<?php echo $this->renderPartial('/requests/_form', array('model' => $request_model))?>
 			<div class="discount">
 				<p class="discount_percent">Скидка 20% на наши услуги</p>
 				<p class="discount_remaining">Предложение действует еще:</p>
@@ -158,7 +148,7 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
 	<div class="authors">
 		<div class="width_960">
 			<h4 class="name">Глеб Викторович</h4>
-			<h4 class="name">Глеб Викторович</h4ы>
+			<h4 class="name">Глеб Викторович</h4>
 		</div>
 	</div>
 </div>
