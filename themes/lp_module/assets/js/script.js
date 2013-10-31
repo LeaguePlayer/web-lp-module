@@ -55,5 +55,6 @@ $('a.orange_button').click(function(){
 });
 
 $('.cert').fancybox();
+$("#pick_name").opentip("Shown after 2 seconds", { delay: 2 });
 
 });
