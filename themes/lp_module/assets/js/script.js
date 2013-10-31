@@ -55,10 +55,5 @@ $('a.orange_button').click(function(){
 });
 
 $('.cert').fancybox();
-<<<<<<< HEAD
-//$("#pick_name").opentip("Shown after 2 seconds", { delay: 2 });
-=======
-$("#pick_name").opentip("Не менее 4х символов", {target: "#pick_name", tipJoint: "bottom" });
->>>>>>> 37bd25543885903c2e12aa68f36dcef8d189c836
 
 });
