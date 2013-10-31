@@ -18,7 +18,15 @@ class RequestsController extends FrontController
 		{
 			$model->attributes=$_POST['Requests'];
 			$model->save();
-			//$this->renderPartial('_mail', array('model' => $model));
+
+			//send sms
+			$phone = Settings::getOption('phone');
+			$template = '_sms';
+			if ($model->action == 2) $template = '_sms2';
+			//echo $this->renderPartial($template, array('model' => $model), true);
+			Yii::app()->sms->send($this->renderPartial($template, array('model' => $model), true), $phone);
+			
+			//send email
 			SiteHelper::sendMail(Requests::getActions($model->action), $this->renderPartial('_mail', array('model' => $model), true), Settings::getOption('email'));
 
 			Yii::app()->end();

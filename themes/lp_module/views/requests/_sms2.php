@@ -1,0 +1,1 @@
+Поступила заявка по программе Молодая семья; Имя: <?=CHtml::encode($model->name)?>, Телефон: <?=CHtml::encode($model->phone)?>; <?=CHtml::encode(Requests::getActions($model->action))?>
