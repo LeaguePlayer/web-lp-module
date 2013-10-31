@@ -50,11 +50,11 @@ $('.timer').each(function(){
 
 $('a.orange_button').click(function(){
 	$('body').animate({scrollTop:0}, '1000', function(){
-		$('#pick_name').focus();
+		$('#Requests_name').focus();
 	});
 });
 
 $('.cert').fancybox();
-$("#pick_name").opentip("Shown after 2 seconds", { delay: 2 });
+//$("#pick_name").opentip("Shown after 2 seconds", { delay: 2 });
 
 });

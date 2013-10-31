@@ -6,6 +6,8 @@ class ListAction extends AdminAction
     {
         $model = $this->getModel('search');
 
+        $model->unsetAttributes();
+
         if($showRemoved)
             $model->removed();
         

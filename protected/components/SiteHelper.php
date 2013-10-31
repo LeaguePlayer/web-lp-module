@@ -95,18 +95,27 @@ class SiteHelper {
 		}
 	}
 
-	public static function russianDate($datetime = null) {
-        if ($datetime == 0)
-            return '';
+	// public static function russianDate($datetime = null) {
+ //        if ($datetime == 0)
+ //            return '';
             
-		if (is_numeric($datetime) ) {
-			$timestamp = $datetime;
-		} else if (is_string($datetime)) {
-			$timestamp = strtotime($datetime);
-        } else {
-			$timestamp = time();
-		}
-		$date = explode(".", date("d.m.Y", $timestamp));
+	// 	if (is_numeric($datetime) ) {
+	// 		$timestamp = $datetime;
+	// 	} else if (is_string($datetime)) {
+	// 		$timestamp = strtotime($datetime);
+ //        } else {
+	// 		$timestamp = time();
+	// 	}
+	// 	$date = explode(".", date("d.m.Y", $timestamp));
+	// 	$m = self::russianMonth($date[1]);
+	// 	return $date[0] . '&nbsp;' . $m . '&nbsp;' . $date[2];
+	// }
+
+	public static function russianDate($timestamp = null) {
+        if (!$timestamp)
+            return '';
+        print_r(strtotime($timestamp)); die();
+		$date = explode(".", date("d.m.Y", strtotime($timestamp)));
 		$m = self::russianMonth($date[1]);
 		return $date[0] . '&nbsp;' . $m . '&nbsp;' . $date[2];
 	}
