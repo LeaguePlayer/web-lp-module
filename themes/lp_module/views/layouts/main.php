@@ -3,6 +3,7 @@
 	$cs = Yii::app()->clientScript;
 	$cs->registerCssFile($this->getAssetsUrl().'/fonts/fonts.css');
 	$cs->registerCssFile($this->getAssetsUrl().'/css/normalize.css');
+	$cs->registerCssFile($this->getAssetsUrl().'/css/opentip.css');
 	$cs->registerCssFile($this->getAssetsUrl().'/css/style.css');
 	$cs->registerCssFile($this->getAssetsUrl().'/js/fancybox/jquery.fancybox.css');
 	// //$cs->registerCssFile($this->getAssetsUrl().'/css/fancybox/jquery.fancybox-buttons.css');
@@ -17,6 +18,8 @@
 	$cs->registerScriptFile($this->getAssetsUrl().'/js/moment.min.js', CClientScript::POS_END);
 	$cs->registerScriptFile($this->getAssetsUrl().'/js/fancybox/jquery.fancybox.pack.js', CClientScript::POS_END);
 	$cs->registerScriptFile($this->getAssetsUrl().'/js/jquery.lwtCountdown-1.0.js', CClientScript::POS_END);
+	$cs->registerScriptFile($this->getAssetsUrl().'/js/opentip/opentip.js', CClientScript::POS_END);
+	$cs->registerScriptFile($this->getAssetsUrl().'/js/opentip/adapter-jquery.js', CClientScript::POS_END);
 	$cs->registerScriptFile($this->getAssetsUrl().'/js/script.js', CClientScript::POS_END);
 	$cs->registerScriptFile('http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU', CClientScript::POS_END);
 
