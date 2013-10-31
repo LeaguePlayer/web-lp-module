@@ -1,0 +1,27 @@
+@font-face {
+	font-family: NeoSans;
+	src: url(NeoSansPro-Regular.otf);
+}
+	
+
+@font-face {
+	font-family: NeoSansBold;
+	src: url(NeoSansPro-Bold.otf);
+}
+	
+	
+@font-face {
+	font-family: NeoSansUltra;
+	src: url(NeoSansPro-Ultra.otf);
+}
+
+@font-face {
+	font-family: Helvetica;
+	src: url(Helvetica.eot);
+}
+
+body {
+	font-family: NeoSans;
+	color: #404040;
+}
+	
