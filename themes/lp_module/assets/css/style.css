@@ -165,6 +165,7 @@ input:focus {
         margin-bottom: 10px;
         border: 1px solid #bfbfbf;
         border-left: none;
+        color: #999999;
         line-height: 2.3; }
       .pick_flat .pick_wrap .request label {
         display: inline-block;

@@ -155,11 +155,11 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
 <div class="certificates">
 	<div class="width_960">
 		<h1>Наши сертификаты</h1>
-		<a href="#"><img src="<?=$this->getAssetsUrl()?>/img/cert_sberbank.jpg"></a>
-		<a href="#"><img src="<?=$this->getAssetsUrl()?>/img/cert_vtb.jpg"></a>
-		<a href="#"><img src="<?=$this->getAssetsUrl()?>/img/cert_vtb.jpg"></a>
-		<a href="#"><img src="<?=$this->getAssetsUrl()?>/img/cert_sberbank_mail.jpg"></a>
-		<a href="#"><img src="<?=$this->getAssetsUrl()?>/img/cert_sberbank_mail.jpg"></a>
+		<a href="<?=$this->getAssetsUrl()?>/img/cert_sberbank.jpg" rel="cert" class="cert"><img src="<?=$this->getAssetsUrl()?>/img/cert_sberbank.jpg"></a>
+		<a href="<?=$this->getAssetsUrl()?>/img/cert_vtb.jpg" rel="cert" class="cert"><img src="<?=$this->getAssetsUrl()?>/img/cert_vtb.jpg"></a>
+		<a href="<?=$this->getAssetsUrl()?>/img/cert_vtb.jpg" rel="cert" class="cert"><img src="<?=$this->getAssetsUrl()?>/img/cert_vtb.jpg"></a>
+		<a href="<?=$this->getAssetsUrl()?>/img/cert_sberbank_mail.jpg" rel="cert"><img src="<?=$this->getAssetsUrl()?>/img/cert_sberbank_mail.jpg"></a>
+		<a href="<?=$this->getAssetsUrl()?>/img/cert_sberbank_mail.jpg" rel="cert"><img src="<?=$this->getAssetsUrl()?>/img/cert_sberbank_mail.jpg"></a>
 	</div>
 </div>
 <div class="how_pick">
