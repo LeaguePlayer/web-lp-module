@@ -56,4 +56,8 @@ $('a.orange_button').click(function(){
 
 $('.cert').fancybox();
 
+$('.consult .orange_button').on('click', function(){
+	$('#Requests_action').val(2);
+});
+
 });

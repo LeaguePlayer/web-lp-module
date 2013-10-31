@@ -24,13 +24,12 @@ $this->menu=array(
 		),
 		'name',
 		'phone',
-		// array(
-		// 	'name'=>'status',
-		// 	'type'=>'raw',
-		// 	'value'=>'Requests::getStatusAliases($data->status)',
-		// 	'filter'=>Requests::getStatusAliases()
-		// ),
-		'sort',
+		array(
+			'name'=>'status',
+			'type'=>'raw',
+			'value'=>'Requests::getStatusAliases($data->status)',
+			'filter'=>Requests::getStatusAliases()
+		),
 		array(
 			'name'=>'create_time',
 			'type'=>'raw',
@@ -42,6 +41,7 @@ $this->menu=array(
 			//'visible' => '$data->update_time != "0000-00-00 00:00:00"',
 			'value'=>'$data->update_time != "0000-00-00 00:00:00" ? date("d.m.Y", strtotime($data->update_time))." в ".date("H:i", strtotime($data->update_time)) : date("d.m.Y", strtotime($data->create_time))." в ".date("H:i", strtotime($data->create_time))'
 		),
+		
 		array(
 			'class'=>'bootstrap.widgets.TbButtonColumn',
 		),

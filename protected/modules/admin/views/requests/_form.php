@@ -6,7 +6,7 @@
 	<?php echo $form->errorSummary($model); ?>
 
 
-	<?php echo $form->textFieldControlGroup($model,'action',array('class'=>'span8')); ?>
+	<?php echo $form->dropDownListControlGroup($model,'action',Requests::getActions()); ?>
 
 	<?php echo $form->textFieldControlGroup($model,'name',array('class'=>'span8','maxlength'=>255)); ?>
 

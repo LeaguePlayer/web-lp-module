@@ -19,6 +19,8 @@ class RequestsController extends FrontController
 			$model->attributes=$_POST['Requests'];
 			$model->save();
 
+			SiteHelper::sendMail(Requests::getActions($model->action), $this->renderPartial('_mail', array('model' => $model)), Settings::getOption('email'));
+
 			Yii::app()->end();
 		}
 
@@ -27,13 +29,6 @@ class RequestsController extends FrontController
 		));
 	}
 
-	/**
-	 * Returns the data model based on the primary key given in the GET variable.
-	 * If the data model is not found, an HTTP exception will be raised.
-	 * @param integer $id the ID of the model to be loaded
-	 * @return Requests the loaded model
-	 * @throws CHttpException
-	 */
 	public function loadModel($id)
 	{
 		$model=Requests::model()->findByPk($id);
@@ -42,10 +37,6 @@ class RequestsController extends FrontController
 		return $model;
 	}
 
-	/**
-	 * Performs the AJAX validation.
-	 * @param Requests $model the model to be validated
-	 */
 	protected function performAjaxValidation($model)
 	{
 		if(isset($_POST['ajax']) && $_POST['ajax']==='requests-form')

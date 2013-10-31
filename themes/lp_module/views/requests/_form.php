@@ -69,7 +69,9 @@
 					data: form.serialize(),
 					type: "POST",
 					success: function(){
-						$.fancybox.open("<h2>Спасибо!</h2><p>Мы постараемся обработать Вашу заявку максимально быстро! Ожидайте звонка специалиста.</p>");
+						form.find(":text").val("");
+						form.find("#Requests_action").val(1);
+						$.fancybox.open("<h2>Спасибо!</h2><p>Мы постараемся обработать Вашу заявку максимально быстро! Ожидайте звонка специалиста.</p>", {maxWidth: 300});
 					}
 				});
 			}

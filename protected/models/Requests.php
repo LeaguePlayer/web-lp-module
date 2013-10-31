@@ -86,12 +86,24 @@ class Requests extends EActiveRecord
         return 'Заявки';
     }
 
+    public static function getStatusAliases($status = -1)
+    {
+        $aliases = array(
+            1 => 'Ожидает',
+            2 => 'Обработана'
+        );
+
+        if ($status > -1)
+            return $aliases[$status];
+
+        return $aliases;
+    }
+
     public static function getActions($i = false){
        
         $types = array(
-            1 => 'Просто заявка',
+            1 => 'Заявка на подбор квартиры',
             2 => 'Выездная консультация',
-            3 => 'Бесплатная заявка',
         );
 
         if($i){
