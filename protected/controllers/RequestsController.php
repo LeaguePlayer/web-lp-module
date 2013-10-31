@@ -18,8 +18,8 @@ class RequestsController extends FrontController
 		{
 			$model->attributes=$_POST['Requests'];
 			$model->save();
-
-			SiteHelper::sendMail(Requests::getActions($model->action), $this->renderPartial('_mail', array('model' => $model)), Settings::getOption('email'));
+			//$this->renderPartial('_mail', array('model' => $model));
+			SiteHelper::sendMail(Requests::getActions($model->action), $this->renderPartial('_mail', array('model' => $model), true), Settings::getOption('email'));
 
 			Yii::app()->end();
 		}
