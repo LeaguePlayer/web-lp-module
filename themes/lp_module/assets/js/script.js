@@ -34,6 +34,8 @@ $('.timer').each(function(){
 
 	var targetDate = moment(arrFix).format('DD.MM.YY').split('.');
 
+	console.log('осталось дней: '+daysRemaining, 'targetDate: '+targetDate);
+
 	if(daysRemaining>=0){
 		$(this).parent().find('.countdown').countDown({
 					targetDate: {
@@ -43,18 +45,23 @@ $('.timer').each(function(){
 						'hour': 	0,
 						'min': 		0,
 						'sec': 		0
-					}
+					},
+					omitWeeks: true
+
 		});
 	}
 });
 
+/* Прокрутка страницы для кнопок */
 $('a.orange_button').click(function(){
 	$('body, html').animate({scrollTop:0}, '1000', function(){
 		$('#pick_name').focus();
 	});
 });
 
+/* Вызов FancyBox */
 $('.cert').fancybox();
-$("#pick_name").opentip("Не менее 4х символов", {target: "#pick_name", tipJoint: "bottom" });
+
+/*$("#pick_name").opentip("Не менее 4х символов", {target: "#pick_name", tipJoint: "bottom" });*/
 
 });
