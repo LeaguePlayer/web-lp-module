@@ -24,7 +24,7 @@ class Requests extends EActiveRecord
     public function rules()
     {
         return array(
-            array('name, phone, create_time', 'required'),
+            array('name, phone', 'required'),
             array('action, status, sort', 'numerical', 'integerOnly'=>true),
             array('name, phone', 'length', 'max'=>255),
             array('update_time', 'safe'),
@@ -86,5 +86,36 @@ class Requests extends EActiveRecord
         return 'Заявки';
     }
 
+    public static function getStatusAliases($status = -1)
+    {
+        $aliases = array(
+            1 => 'Ожидает',
+            2 => 'Обработана'
+        );
 
+        if ($status > -1)
+            return $aliases[$status];
+
+        return $aliases;
+    }
+
+    public static function getActions($i = false){
+       
+        $types = array(
+            1 => 'Заявка на подбор квартиры',
+            2 => 'Выездная консультация',
+        );
+
+        if($i){
+            if(isset($types[$i])) return $types[$i];
+            else return $types[1];
+        }
+        return $types;
+    }
+    // public function beforeValidation(){
+
+    //     $this->create_time
+
+    //     return parent::beforeValidation();
+    // }
 }

@@ -95,18 +95,27 @@ class SiteHelper {
 		}
 	}
 
-	public static function russianDate($datetime = null) {
-        if ($datetime == 0)
-            return '';
+	// public static function russianDate($datetime = null) {
+ //        if ($datetime == 0)
+ //            return '';
             
-		if (is_numeric($datetime) ) {
-			$timestamp = $datetime;
-		} else if (is_string($datetime)) {
-			$timestamp = strtotime($datetime);
-        } else {
-			$timestamp = time();
-		}
-		$date = explode(".", date("d.m.Y", $timestamp));
+	// 	if (is_numeric($datetime) ) {
+	// 		$timestamp = $datetime;
+	// 	} else if (is_string($datetime)) {
+	// 		$timestamp = strtotime($datetime);
+ //        } else {
+	// 		$timestamp = time();
+	// 	}
+	// 	$date = explode(".", date("d.m.Y", $timestamp));
+	// 	$m = self::russianMonth($date[1]);
+	// 	return $date[0] . '&nbsp;' . $m . '&nbsp;' . $date[2];
+	// }
+
+	public static function russianDate($timestamp = null) {
+        if (!$timestamp)
+            return '';
+        print_r(strtotime($timestamp)); die();
+		$date = explode(".", date("d.m.Y", strtotime($timestamp)));
 		$m = self::russianMonth($date[1]);
 		return $date[0] . '&nbsp;' . $m . '&nbsp;' . $date[2];
 	}
@@ -116,8 +125,8 @@ class SiteHelper {
         if($to=='') $to = Yii::app()->params['adminEmail'];
         if($from=='') $from = 'no-reply@torsim.ru';
         $headers = "MIME-Version: 1.0\r\nFrom: $from\r\nReply-To: $from\r\nContent-Type: text/html; charset=utf-8";
-	    $message = wordwrap($message, 70);
-	    $message = str_replace("\n.", "\n..", $message);
+	    //$message = wordwrap($message, 70);
+	    //$message = str_replace("\n.", "\n..", $message);
         return mail($to,'=?UTF-8?B?'.base64_encode($subject).'?=',$message,$headers);
     }
 }

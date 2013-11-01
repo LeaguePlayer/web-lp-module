@@ -35,7 +35,7 @@ class m131031_050705_requests extends CDbMigration
             'name' => "string NOT NULL COMMENT 'Имя'",
             'phone' => "string NOT NULL COMMENT 'Телефон'",
 			
-			'status' => "tinyint COMMENT 'Статус'",
+			'status' => "tinyint COMMENT 'Статус' DEFAULT 1",
 			'sort' => "integer COMMENT 'Вес для сортировки'",
             'create_time' => "timestamp COMMENT 'Дата создания'",
             'update_time' => "timestamp COMMENT 'Дата последнего редактирования'",

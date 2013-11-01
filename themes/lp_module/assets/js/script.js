@@ -54,14 +54,16 @@ $('.timer').each(function(){
 
 /* Прокрутка страницы для кнопок */
 $('a.orange_button').click(function(){
-	$('body, html').animate({scrollTop:0}, '1000', function(){
-		$('#pick_name').focus();
+	$('body').animate({scrollTop:0}, '1000', function(){
+		$('#Requests_name').focus();
 	});
 });
 
 /* Вызов FancyBox */
 $('.cert').fancybox();
 
-/*$("#pick_name").opentip("Не менее 4х символов", {target: "#pick_name", tipJoint: "bottom" });*/
+$('.consult .orange_button').on('click', function(){
+	$('#Requests_action').val(2);
+});
 
 });

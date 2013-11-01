@@ -10,7 +10,7 @@ return array(
     'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
     'name'=>'Новый сайт',
     'language' => 'ru',
-    'theme'=>'default',
+    'theme'=>'lp_module',
     // preloading 'log' component
     'preload'=>array('log'),
 
@@ -26,7 +26,7 @@ return array(
     'modules'=>array(
         // uncomment the following to enable the Gii tool
 
-        /*'gii'=>array(
+        'gii'=>array(
             'class'=>'system.gii.GiiModule',
             'password'=>'qwe123',
             'ipFilters'=>array('127.0.0.1','::1'),
@@ -36,7 +36,7 @@ return array(
             //'import' => array(
             //	'appext.imagesgallery.GalleryBehavior',
             //),
-        ),*/
+        ),
         'admin'=>array(),
         'email'=>array(),
         'auth'=>array(),
@@ -135,7 +135,7 @@ return array(
             'offset' => 0,
         ),
         'db'=>array(
-            'connectionString' => 'mysql:host=localhost;dbname=yii_magic_box',
+            'connectionString' => 'mysql:host=localhost;dbname=lp_module',
             'emulatePrepare' => true,
             'username' => 'root',
             'password' => 'root',
@@ -152,13 +152,13 @@ return array(
                     'class'=>'CFileLogRoute',
                     'levels'=>'error, warning',
                 ),
-                ///*
+                /*
                 array(
                     'class'=>'CWebLogRoute',
                     'levels'=>'error, warning, trace, profile, info',
                     'enabled'=>true,
                 ),
-                //*/
+                */
             ),
         ),
     ),

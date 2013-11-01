@@ -1,8 +1,14 @@
 <?php $form = $this->beginWidget('CActiveForm', array(
-    'id'=>'request-form',
-    'action' => '/requests/send',
+    'id'=>'requests-form',
+    'action' => $this->createUrl('requests/send'),
     'enableAjaxValidation'=>true,
     'enableClientValidation'=>true,
+    'clientOptions' => array(
+        'validateOnSubmit'=>true,
+        'validateOnChange'=>true,
+        'validateOnType'=>false,
+        'afterValidate'=>'js:requestValidation', // Your JS function to submit form
+	),
     'htmlOptions' => array(
     	'class' => 'request'
     )
@@ -12,17 +18,19 @@
 	<h2>Отправить заявку</h2>
 
     <?php echo CHtml::label('', 'pick_name', array('class' => 'label_name')); ?>
-    <?php echo $form->textField($model,'name', array('id' => 'pick_name', 'placeholder' => 'Введите имя*:')); ?>
-    <?php echo $form->error($model,'name'); ?>
+    <?php echo $form->textField($model,'name', array('placeholder' => 'Введите имя*:')); ?>
+    <div style="display: none;"><?php echo $form->error($model,'name'); ?></div>
 
     <?php echo CHtml::label('', 'pick_phone', array('class' => 'label_phone')); ?>
     <?php $this->widget('CMaskedTextField', array(
 		'model' => $model,
 		'attribute' => 'phone',
 		'mask' => '+7 999 999 99 99',
-		'htmlOptions' => array('id' => 'pick_phone', 'placeholder' => 'Введите телефон*:', 'size' => 16)
+		'htmlOptions' => array('placeholder' => 'Введите телефон*:', 'size' => 16)
 	)); ?>
-    <?php echo $form->error($model,'phone'); ?>
+    <div style="display: none;"><?php echo $form->error($model,'phone'); ?></div>
+	
+	<?php echo $form->hiddenField($model,'action', array('value' => 1));?>
 
     <div class="button_wrap">
     	<?php echo CHtml::submitButton('Отправить', array('class' => 'orange_button'));?>
@@ -32,3 +40,41 @@
 	<p class="trust clock">Мы несем ответственность за безопасность Ваших даных!</p>
 
 <?php $this->endWidget(); ?>
+<?php
+	$cs = Yii::app()->clientScript;
+
+	$cs->registerScript('req-form', '
+		var requestValidation = function(form, data, hasError){
+			if(hasError){
+				var tips = [];
+
+				var opt = {
+					style: "alert",
+					target: true,
+					stem: true,
+					showOn: "creation",
+					tipJoint: "left"
+				};
+				
+				for(id in data){
+					var t = new Opentip($("#" + id), opt);
+					t.setContent(data[id].pop());
+					tips.push(t);
+					t.show();
+				}
+			}else{
+				var form = $("#requests-form");
+				$.ajax({
+					url: form.attr("action"),
+					data: form.serialize(),
+					type: "POST",
+					success: function(){
+						form.find(":text").val("");
+						form.find("#Requests_action").val(1);
+						$.fancybox.open("<h2>Спасибо!</h2><p>Мы постараемся обработать Вашу заявку максимально быстро! Ожидайте звонка специалиста.</p>", {maxWidth: 300});
+					}
+				});
+			}
+		};
+	', CClientScript::POS_END);
+?>
