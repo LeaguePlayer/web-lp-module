@@ -34,8 +34,6 @@ $('.timer').each(function(){
 
 	var targetDate = moment(arrFix).format('DD.MM.YY').split('.');
 
-	console.log('осталось дней: '+daysRemaining, 'targetDate: '+targetDate);
-
 	if(daysRemaining>0){
 		$(this).parent().find('.countdown').countDown({
 					targetDate: {
