@@ -1,5 +1,6 @@
 <div class="pick_flat">
 	<div class="width_960">
+		<span class="arrow"></span>
 		<div class="pick_head"><h1>Хотите подобрать квартиру по</h1><h1 class="second"> программе "Молодая семья"?</h1></div>
 		<div class="pick_wrap">
 			<?php echo $this->renderPartial('/requests/_form', array('model' => $request_model))?>
@@ -12,21 +13,25 @@
 				<div id="countdown_dashboard" class="countdown">
 
 					<div class="dash days_dash">
+						<span class="dash_title">дней</span>
 						<div class="digit">0</div>
 						<div class="digit">0</div>
 					</div>
 
 					<div class="dash hours_dash">
+						<span class="dash_title">часов</span>
 						<div class="digit">0</div>
 						<div class="digit">0</div>
 					</div>
 
 					<div class="dash minutes_dash">
+						<span class="dash_title">минут</span>
 						<div class="digit">0</div>
 						<div class="digit">0</div>
 					</div>
 
 					<div class="dash seconds_dash">
+						<span class="dash_title">секунд</span>
 						<div class="digit">0</div>
 						<div class="digit">0</div>
 					</div>
@@ -34,7 +39,7 @@
 				<!-- Таймер/// -->
 
 			</div>
-			<div class="discount">
+			<div class="discount topline">
 				<p class="discount_percent">Скидка 10% на наши услуги</p>
 				<p class="discount_remaining">Предложение действует еще:</p>
 				
@@ -43,21 +48,25 @@
 					<div id="countdown_dashboard2" class="countdown">
 
 					<div class="dash days_dash">
+						<span class="dash_title">дней</span>
 						<div class="digit">0</div>
 						<div class="digit">0</div>
 					</div>
 
 					<div class="dash hours_dash">
+						<span class="dash_title">часов</span>
 						<div class="digit">0</div>
 						<div class="digit">0</div>
 					</div>
 
 					<div class="dash minutes_dash">
+						<span class="dash_title">минут</span>
 						<div class="digit">0</div>
 						<div class="digit">0</div>
 					</div>
 
 					<div class="dash seconds_dash">
+						<span class="dash_title">секунд</span>
 						<div class="digit">0</div>
 						<div class="digit">0</div>
 					</div>
@@ -192,8 +201,8 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
 			<div class="contacts">
 				<p class="adress">Г.Тюмень ул. Герцена 64, 8 этаж</p>
 				<p class="phone">8 (3453) 58-48-38</p>
-				<p class="phone">8 (3453) 58-48-38</p>
-				<p class="phone">8 (3453) 58-48-38</p>
+				<p class="phone">8 (3452) 60-81-95</p>
+				<p class="phone">8 (3452) 58-52-80</p>
 				<span class="blackline"></span>
 				<p class="work_header">Работа офиса</p>
 				<p class="work-time">ПН-ПТ&nbsp;&nbsp;&nbsp;10:00-19:00</p>
