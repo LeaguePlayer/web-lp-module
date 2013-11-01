@@ -31,6 +31,10 @@ class SiteController extends FrontController
 	{
 		$request_model = Requests::model();
 
+		//meta tags
+		if(Settings::getOption('meta_keys'))  Yii::app()->clientScript->registerMetaTag(CHtml::encode(Settings::getOption('meta_keys')), 'keywords');
+		if(Settings::getOption('meta_description'))  Yii::app()->clientScript->registerMetaTag(CHtml::encode(Settings::getOption('meta_description')), 'description');
+
 		$this->render('index', array('request_model' => $request_model));
 	}
 

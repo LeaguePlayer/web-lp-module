@@ -13,6 +13,8 @@ class StartController extends AdminController{
             foreach ( $_POST['Settings'] as $option => $value ) {
                 Settings::setOption($option, $value);
             }
+            Yii::app()->user->setFlash('success', "Изменения сохранены.");
+            $this->redirect('settings');
         }
         $this->render('settings', array('settings' => Settings::model()->findAll()));
     }
