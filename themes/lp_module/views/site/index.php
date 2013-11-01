@@ -8,7 +8,7 @@
 				<p class="discount_remaining">Предложение действует еще:</p>
 				
 				<!-- ///Таймер -->
-				<p data-date_fix="10.11.13" class="timer"><p>
+				<p data-date_fix="<?=CHtml::encode(Settings::getOption('date1'))?>" class="timer"><p>
 				<div id="countdown_dashboard" class="countdown">
 
 					<div class="dash days_dash">
@@ -39,7 +39,7 @@
 				<p class="discount_remaining">Предложение действует еще:</p>
 				
 				<!-- ///Таймер2 -->
-					<p data-date_fix="30.10.13" class="timer"><p>
+					<p data-date_fix="<?=CHtml::encode(Settings::getOption('date2'))?>" class="timer"><p>
 					<div id="countdown_dashboard2" class="countdown">
 
 					<div class="dash days_dash">
