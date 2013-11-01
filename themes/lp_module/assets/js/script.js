@@ -36,7 +36,7 @@ $('.timer').each(function(){
 
 	console.log('осталось дней: '+daysRemaining, 'targetDate: '+targetDate);
 
-	if(daysRemaining>=0){
+	if(daysRemaining>0){
 		$(this).parent().find('.countdown').countDown({
 					targetDate: {
 						'day': 		targetDate[0],
@@ -49,7 +49,9 @@ $('.timer').each(function(){
 					omitWeeks: true
 
 		});
-	}
+	} else { 
+		$(this).parent().find('.countdown').append('<p class="inactive"></p>');
+	 }
 });
 
 /* Прокрутка страницы для кнопок */

@@ -36,8 +36,8 @@
     	<?php echo CHtml::submitButton('Отправить', array('class' => 'orange_button'));?>
 	</div>
 	<p class="request_line"></p>
-	<p class="trust lock">Мы несем ответственность за безопасность Ваших даных!</p>
-	<p class="trust clock">Мы несем ответственность за безопасность Ваших даных!</p>
+	<div class="trust lock"><p>Мы несем ответственность за безопасность Ваших даных!</p></div>
+	<div class="trust clock"><p>Мы свяжемся с Вами в течение 24 часов</p></div>
 
 <?php $this->endWidget(); ?>
 <?php

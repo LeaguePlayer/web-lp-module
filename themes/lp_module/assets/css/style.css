@@ -218,7 +218,17 @@ input:focus {
         padding-left: 10px;
         color: white;
         margin-bottom: 15px;
-        line-height: 1.8; }
+        line-height: 1.8;
+      }
+
+      .pick_flat .pick_wrap .request p {
+        display: table-cell;
+        height: 36px;
+        vertical-align: middle;
+        text-align: left;
+        padding-left: 30px;
+      }
+
       .pick_flat .pick_wrap .request .lock {
         margin-top: 45px;
         background: url(../img/request_lock.png) no-repeat 0px center; }
@@ -244,7 +254,7 @@ input:focus {
         background-repeat: no-repeat;
         background-position: center center;
         width: 100%;
-        height: 155px;
+        height: 150px;
         top: 0px;
         left: 0px; }
 
@@ -295,6 +305,8 @@ input:focus {
       background-position: 0px -468px; }
     .cooperate .row .item-6 {
       background-position: 0px -583px; }
+
+    /*s*/
 
 .consult {
   background-color: white;
