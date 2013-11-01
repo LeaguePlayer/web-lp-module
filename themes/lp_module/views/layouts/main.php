@@ -49,12 +49,12 @@
 	<body>
 		<div class="header">
 			<div class="width_960">
-				<p class="logo left"></p>
+				<div class="logo left"><p class="logo"></p></div>
 				<div class="call_us">
 					<h2>Звоните нам прямо сейчас</h2>
 					<h1>8 (3452) 58-48-38</h1>
 				</div>
-				<p class="logo right"></p>
+				<div class="logo right"><p class="agency"></p></div>
 			</div>
 		</div>
 		<?php echo $content;?>

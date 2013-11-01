@@ -66,7 +66,7 @@ input:focus {
   z-index: 10;
   box-shadow: 0px 2px 10px #a8a9ad; }
   .header .logo {
-    background: url(../img/logo.png) no-repeat;
+    background: url(../img/module_bg.png) no-repeat;
     position: absolute;
     height: 155px;
     width: 281px;
@@ -76,6 +76,16 @@ input:focus {
     left: 0px; }
   .header .right {
     right: 0px; }
+  .header .right .agency {
+    width: 100%;
+    height: 100%;
+    background: url(../img/module.png) no-repeat center 15px;
+  }
+  .header .left .logo {
+    width: 100%;
+    height: 100%;
+    background: url(../img/logo.png) no-repeat center 15px;
+  }
   .header .call_us h2 {
     font-size: 20px;
     font-family: NeoSansBold;
@@ -211,7 +221,7 @@ input:focus {
         width: 100%;
         height: 24px;
         position: absolute;
-        left: 0px;
+        left: -15px;
         top: 240px; }
       .pick_flat .pick_wrap .request .trust {
         font-size: 10px;
@@ -294,19 +304,17 @@ input:focus {
       font-size: 16px;
       padding-right: 35px; }
     .cooperate .row .item-1 {
-      background-position: 0px -17px; }
-    .cooperate .row .item-2 {
       background-position: 0px -135px; }
-    .cooperate .row .item-3 {
-      background-position: 0px -245px; }
-    .cooperate .row .item-4 {
+    .cooperate .row .item-2 {
       background-position: 0px -353px; }
-    .cooperate .row .item-5 {
+    .cooperate .row .item-3 {
+      background-position: 0px -17px; }
+    .cooperate .row .item-4 {
       background-position: 0px -468px; }
+    .cooperate .row .item-5 {
+      background-position: 0px -245px; }
     .cooperate .row .item-6 {
       background-position: 0px -583px; }
-
-    /*s*/
 
 .consult {
   background-color: white;
@@ -377,7 +385,7 @@ input:focus {
   .partners h3 {
     text-align: left;
     font-size: 30px;
-    margin-left: 125px;
+    margin-left: 10px;
     color: #4d4d4d;
     padding-top: 25px;
     font-weight: 300; }
@@ -388,7 +396,7 @@ input:focus {
     padding-bottom: 25px;
     margin-left: 50px;
     text-transform: uppercase;
-    margin-left: 300px; }
+    margin-left: 95px; }
   .partners .companies_h {
     background-color: #f2feff;
     height: 50px; }
@@ -417,11 +425,11 @@ input:focus {
       margin-top: 25px;
       font-family: NeoSansBold;
       text-align: center; }
-    .partners .left .banks {
+    .partners .banks {
       width: 100%;
       height: 165px;
       background: url(../img/banks.jpg) no-repeat center 0px;
-      margin-top: 10px; }
+      margin-top: 35px; }
   .partners .right {
     width: 475px;
     display: inline-block;

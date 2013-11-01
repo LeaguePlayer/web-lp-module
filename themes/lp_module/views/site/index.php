@@ -119,21 +119,14 @@
 </div>
 <div class="partners">
 	<div class="width_960">
-		<h3>Являемся партнерами</h3><h2>Крупнейших партнеров страны</h2>
-	</div>
-	<div class="companies_h">
-		<div class="width_960">
-			<h2>Банки</h2><h2>Страховые компании</h2>
-		</div>
-	</div>
-	<div class="width_960">
+		<h3>Агентство недвижимости Модуль</h3><h2>Является партнером крупных компаний страны</h2>
 		<div class="left">
 			<p class="sberbank">Официальный партнер</p>
-			<p class="banks"></p>
 		</div>
 		<div class="right">
 			<p class="rosgosstrah">Вы застрахованы от всех ипотечных рисков!</p>
 		</div>
+		<p class="banks"></p>
 	</div>
 </div>
 <div class="comments">
@@ -163,11 +156,11 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
 <div class="certificates">
 	<div class="width_960">
 		<h1>Наши сертификаты</h1>
-		<a href="<?=$this->getAssetsUrl()?>/img/cert_sberbank.jpg" rel="cert" class="cert"><img src="<?=$this->getAssetsUrl()?>/img/cert_sberbank.jpg"></a>
-		<a href="<?=$this->getAssetsUrl()?>/img/cert_vtb.jpg" rel="cert" class="cert"><img src="<?=$this->getAssetsUrl()?>/img/cert_vtb.jpg"></a>
-		<a href="<?=$this->getAssetsUrl()?>/img/cert_vtb.jpg" rel="cert" class="cert"><img src="<?=$this->getAssetsUrl()?>/img/cert_vtb.jpg"></a>
-		<a href="<?=$this->getAssetsUrl()?>/img/cert_sberbank_mail.jpg" rel="cert"  class="cert"><img src="<?=$this->getAssetsUrl()?>/img/cert_sberbank_mail.jpg"></a>
-		<a href="<?=$this->getAssetsUrl()?>/img/cert_sberbank_mail.jpg" rel="cert"  class="cert"><img src="<?=$this->getAssetsUrl()?>/img/cert_sberbank_mail.jpg"></a>
+		<a href="/upload/cert_sberbank.jpg" rel="cert" class="cert"><img src="/upload/cert_sberbank_tmb.jpg"></a>
+		<a href="/upload/cert_vtb.jpg" rel="cert" class="cert"><img src="/upload/cert_vtb_tmb.jpg"></a>
+		<a href="/upload/cert_delta.jpg" rel="cert" class="cert"><img src="/upload/cert_delta_tmb.jpg"></a>
+		<a href="/upload/cert_sberbank_mail.jpg" rel="cert" class="cert"><img src="/upload/cert_sberbank_mail_tmb.jpg"></a>
+		<a href="/upload/cert_rosgosstrah.jpg" rel="cert" class="cert"><img src="/upload/cert_rosgosstrah_tmb.jpg"></a>
 	</div>
 </div>
 <div class="how_pick">
@@ -175,11 +168,11 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
 	<div class="width_960 pick">
 		<h3>Как мы будем подбирать</h3><h2>вам квартиру</h2>
 		<p class="step1">Вы оставляете заявку на сайте или по телефону</p>
-		<p class="step2">Наш специалист созванивается с Вами для получения необходимой информации</p>
+		<p class="step2">Наш специалист связывается с Вами для получения необходимой информации</p>
 		<p class="step3">Мы делаем подборку квартир по вашим параметрам</p>
 		<p class="step4">Повторный звонок для согласования графика просмотра подобранных вариантов</p>
 		<p class="step5">Готовим документы для оформления предстоящей сделки</p>
-		<p class="step6">Поздравляем! вы владелец вашего собственного жилья</p>
+		<p class="step6">Поздравляем! Вы владелец вашего собственного жилья</p>
 	</div>
 	<span class="top_line"></span>
 </div>
@@ -194,7 +187,7 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
 </div>
 <span class="top_line"></span>
 <div class="map_wrap">
-	<h1>Вы можете посетить наш офис в любое время</h1>
+	<h1>Вы можете посетить наш офис в любое, удобное для Вас время</h1>
 	<div id="map">
 		<div class="map width_960">
 			<div class="contacts">
