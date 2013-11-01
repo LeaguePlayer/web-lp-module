@@ -6,6 +6,12 @@
     'enableAjaxValidation'=>false,
 )); ?>
 
+<?php if(Yii::app()->user->hasFlash('success')):?>
+    <div class="info">
+        <?php echo TbHtml::alert(TbHtml::ALERT_COLOR_SUCCESS, Yii::app()->user->getFlash('success')); ?>
+    </div>
+<?php endif; ?>
+
 <?php if ( count($settings) > 0 ): ?>
     <?php foreach ($settings as $setting): ?>
         <div class="control-group">
@@ -23,6 +29,8 @@
                         'displaySize'=>1,
                         'empty'=>'Не задано',
                     )); ?>
+                <?php elseif ( $setting->type == 'text' ): ?>
+                    <textarea class="span3" maxlength="256" id="<?=$setting->option?>" name="Settings[<?=$setting->option?>]" cols="30" rows="4"><?=$setting->value?></textarea>
                 <?php else: ?>
                     <input class="span3" maxlength="256" name="Settings[<?=$setting->option?>]" id="<?=$setting->option?>" value="<?=$setting->value?>" type="text">
                 <?php endif; ?>

@@ -36,7 +36,7 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8" />
-		<title><?php echo $this->title; ?></title>
+		<title><?php echo (Settings::getOption('title') ? Settings::getOption('title') : $this->title); ?></title>
 		<link id="favicon" type="image/x-icon" rel="shortcut icon" href="/favicon.ico"/>
   		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 <!-- 		<link rel="stylesheet" type="text/css" href="/fonts/fonts.css">
