@@ -192,9 +192,8 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
 		<div class="map width_960">
 			<div class="contacts">
 				<p class="adress">Г.Тюмень ул. Герцена 64, 8 этаж</p>
-				<p class="phone">8 (3453) 58-48-38</p>
-				<p class="phone">8 (3452) 60-81-95</p>
-				<p class="phone">8 (3452) 58-52-80</p>
+				<p class="phone">8 (3452) 58-57-17</p>
+				<p class="phone">8 (3452) 58-57-54</p>
 				<span class="blackline"></span>
 				<p class="work_header">Работа офиса</p>
 				<p class="work-time">ПН-ПТ&nbsp;&nbsp;&nbsp;10:00-19:00</p>

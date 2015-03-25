@@ -52,7 +52,8 @@
 				<div class="logo left"><p class="logo"></p></div>
 				<div class="call_us">
 					<h2>Звоните нам прямо сейчас</h2>
-					<h1>8 (3452) 58-48-38</h1>
+					<h1>8 (3452) 58-57-17</h1>
+                    <h1>8 (3452) 58-57-54</h1>
 				</div>
 				<div class="logo right"><p class="agency"></p></div>
 			</div>
