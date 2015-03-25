@@ -98,7 +98,7 @@
 	</div>
 	<span class="top_line"></span>
 </div>
-<div class="consult">
+<!--<div class="consult">
 	<div class="width_960">
 		<div class="order_consult">
 			<h2>У Вас нет возможности приехать к нам в офис?</h2>
@@ -116,7 +116,7 @@
 		<p class="flat_rooms">Трехкомнатные квартиры от <span>60</span> кв.м</p>
 	</div>
 	<span class="top_line"></span>
-</div>
+</div>-->
 <div class="partners">
 	<div class="width_960">
 		<h3>Агентство недвижимости Модуль</h3><h2>Является партнером крупных компаний страны</h2>
@@ -129,7 +129,7 @@
 		<p class="banks"></p>
 	</div>
 </div>
-<div class="comments">
+<!--<div class="comments">
 	<span class="bot_line"></span>
 	<div class="width_960">
 		<h2>Отзывы клиентов, которым</h2><h3>Мы помогли приобрести жилье</h3>
@@ -162,7 +162,7 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
 		<a href="/upload/cert_sberbank_mail.jpg" rel="cert" class="cert"><img src="/upload/cert_sberbank_mail_tmb.jpg"></a>
 		<a href="/upload/cert_rosgosstrah.jpg" rel="cert" class="cert"><img src="/upload/cert_rosgosstrah_tmb.jpg"></a>
 	</div>
-</div>
+</div>-->
 <div class="how_pick">
 	<span class="bot_line"></span>
 	<div class="width_960 pick">
