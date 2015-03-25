@@ -1,7 +1,7 @@
 <div class="pick_flat">
 	<div class="width_960">
 		<span class="arrow"></span>
-		<div class="pick_head"><h1>Хотите подобрать квартиру по</h1><h1 class="second"> программе "Молодая семья"?</h1></div>
+		<div class="pick_head"><h1>Загородная недвижимость</h1></div>
 		<div class="pick_wrap">
 			<?php echo $this->renderPartial('/requests/_form', array('model' => $request_model))?>
 			<div class="discount">
@@ -179,26 +179,16 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
 <div class="proposal_contents">
 	<div class="width_960">
 		<div class="proposal">
-			<h1>Хотите подобрать квартиру по программе</h1><h1 class="prop_orange">&nbsp;"молодая семья"</h1>
+			<h1>Заявка на загородную недвижимость</h1>
 			<p>Наши специалисты свяжутся с вами</p>
 			<a class="orange_button">Совершенно бесплатная заявка</a>
 		</div>
+        <div class="contacts">
+            <p class="phone">8 (3452) 58-57-17</p>
+            <p class="phone">8 (3452) 58-57-54</p>
+	   </div>
 	</div>
-</div>
-<span class="top_line"></span>
-<div class="map_wrap">
-	<h1>Вы можете посетить наш офис в любое, удобное для Вас время</h1>
-	<div id="map">
-		<div class="map width_960">
-			<div class="contacts">
-				<p class="adress">Г.Тюмень ул. Герцена 64, 8 этаж</p>
-				<p class="phone">8 (3452) 58-57-17</p>
-				<p class="phone">8 (3452) 58-57-54</p>
-				<span class="blackline"></span>
-				<p class="work_header">Работа офиса</p>
-				<p class="work-time">ПН-ПТ&nbsp;&nbsp;&nbsp;10:00-19:00</p>
-				<p class="work-time">СБ-ВС&nbsp;&nbsp;&nbsp;10:00-17:00</p>
-			</div>
-		</div>
-	</div>
+    
+
+    
 </div>
