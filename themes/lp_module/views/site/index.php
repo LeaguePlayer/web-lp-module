@@ -182,7 +182,6 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
 			<h1>Заявка на загородную недвижимость</h1>
 			<p>Наши специалисты свяжутся с вами</p>
 			<a class="orange_button">Совершенно бесплатная заявка</a>
-            <p style="font-size: 16px;  margin-top: 60px;  padding-left: 125px; padding-right: 125px;">Посетите наш <a href="http://585717.ru/">официальный сайт</a></p>
 		</div>
         <div class="contacts">
             <p class="phone">8 (3452) 58-57-17</p>
