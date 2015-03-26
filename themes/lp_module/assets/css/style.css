@@ -84,7 +84,7 @@ input:focus {
   .header .left .logo {
     width: 100%;
     height: 100%;
-    background: url(../img/logo.png) no-repeat center 15px;
+    background: url(../img/logo.png) no-repeat center 30px;
   }
   .header .call_us h2 {
     font-size: 20px;

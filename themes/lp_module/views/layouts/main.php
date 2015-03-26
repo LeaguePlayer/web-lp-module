@@ -4,7 +4,7 @@
 	$cs->registerCssFile($this->getAssetsUrl().'/fonts/fonts.css');
 	$cs->registerCssFile($this->getAssetsUrl().'/css/normalize.css');
 	$cs->registerCssFile($this->getAssetsUrl().'/css/opentip.css');
-	$cs->registerCssFile($this->getAssetsUrl().'/css/style.css');
+	$cs->registerCssFile($this->getAssetsUrl().'/css/style.css?v=1');
 	$cs->registerCssFile($this->getAssetsUrl().'/js/fancybox/jquery.fancybox.css');
 	// //$cs->registerCssFile($this->getAssetsUrl().'/css/fancybox/jquery.fancybox-buttons.css');
 	/*<script type="text/javascript" src="/js/modernizr.custom.js"></script>
@@ -55,7 +55,7 @@
 					<h1>8 (3452) 58-57-17</h1>
                     <h1>8 (3452) 58-57-54</h1>
 				</div>
-				<div class="logo right"><p class="agency"></p></div>
+				<div class="logo right"><h1 style="font-family: NeoSans; font-size: 40px;  margin: 30px 0 0;">Выбор есть</h1></div>
 			</div>
 		</div>
 		<?php echo $content;?>
