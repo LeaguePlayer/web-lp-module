@@ -62,7 +62,7 @@
 		<div class="footer">
         
 			<div class="width_960">
-            <p style="font-size: 16px; left: 277px; position: absolute; top: 35px;">Посетите наш <a href="http://585717.ru/">официальный сайт</a></p>
+            <p style="font-size: 16px; left: 277px; position: absolute; top: 35px;">Посетите наш <a target="_blank" href="http://585717.ru/">официальный сайт</a></p>
 				<p class="copyright">Модуль 2008-2013</p>
 				<div class="right">
 	            <div class="amobile_slogan replace_italic">Всегда только лучшие идеи</div>
